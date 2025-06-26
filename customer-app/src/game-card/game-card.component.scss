@@ -1,0 +1,125 @@
+.card {
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 12px 12px 0 0;
+    padding: 20px 2rem;
+    background: #ffffffe6;
+    color: hsl(0, 0%, 0%);
+    width: 32rem;
+}
+
+.noAccordion {
+    border-radius: 12px;
+    margin-bottom: 50px;
+    border: 2px solid black;
+}
+
+.product-grid-header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 25% auto 25%;
+    grid-template-rows: 40px;
+}
+.product-grid-content {
+    display: grid;
+    grid-template-columns: 33% 10% auto 10% 33%;
+    grid-template-rows: 105px;
+    justify-items: center;
+    align-items: center;
+}
+
+.date {
+    font-family: 'Baskerville Old Face';
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000ad;
+}
+
+.time {
+    font-family: 'Consolas';
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 3px;
+    color: #000000ad;
+}
+
+.league {
+    font-style: italic;
+    font-family: 'Alegreya';
+    font-size: 19px;
+    justify-self: center;
+}
+
+.stage {
+    font-family: sans-serif;
+    color: #000000ab;
+    margin-top: 2px;
+}
+
+.homeAwayIcon {
+    justify-self: end;
+}
+
+.line{
+    margin: 16px 21px 30px 21px;
+}
+
+.teamLogoName {
+    text-align: center;
+}
+
+.teamName {
+    font-family: 'Rockwell';
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.score{
+    font-size: 49px;
+    color: #231b1b;
+    font-family: serif;
+    margin-bottom: 12px;
+}
+
+.accordionHeader {
+    font-family: 'system-ui';
+    font-size: 17px;
+}
+
+:host ::ng-deep {
+    .p-accordion p-accordiontab:last-child .p-accordion-header:not(.p-highlight) .p-accordion-header-link {
+        border-radius: 0 0 12px 12px;
+        border-width: unset;
+        border-color: #ffffffe6;
+        background: #131a6feb;
+        color: #ffffffe6;
+        font-weight: normal;
+        justify-content: center;
+        box-shadow: none;
+    }
+    
+    .p-accordion .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link {
+        background: #131a6feb;
+        border-color: #ffffffe6;
+        color: #ffffffe6;
+        border-radius: 0;
+        justify-content: center;
+        border-width: unset;
+        box-shadow: none;
+    }
+
+    .p-accordion p-accordiontab:last-child .p-accordion-content {
+        border-color: #ffffffe6;
+        background: #ffffffe6;
+        justify-content: center;
+        border-width: unset;
+        text-align: center;
+        border-radius: 0;
+        display: flex;
+        padding: 0px;
+    }
+    
+    .p-accordion p-accordiontab .p-accordion-tab {
+        margin-bottom: 50px;
+      }
+}

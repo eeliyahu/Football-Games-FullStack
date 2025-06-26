@@ -1,0 +1,13 @@
+# Top-level ignores for monorepo
+
+**/node_modules/
+**/dist/
+**/.firebase/
+**/coverage/
+**/.DS_Store
+**/Thumbs.db
+
+# Editor config
+.vscode/
+.idea/
+.history/

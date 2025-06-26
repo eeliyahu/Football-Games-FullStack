@@ -1,0 +1,187 @@
+.title {
+    font-size: 46px;
+    font-family: 'Alegreya', serif;
+    font-style: italic;
+    background-color: #ffffffe6;
+    color: #0c360d;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 0px 11px;
+    width: fit-content;
+    margin: 30px 0 0 0;
+}
+
+.searchPanel {
+    display: flex;
+    position: fixed;
+    bottom: 1rem;
+    z-index: 10;
+    width: 48rem;
+    left: 51%;
+    transform: translateX(-50%);
+}
+
+.searchText{
+    background: #0a0c42eb;
+    border-color: black;
+    border-radius: 4rem 0 0 4rem;
+    pointer-events: none;
+    border-width: 4px;
+    box-shadow: none;
+    font-family: fantasy;
+}
+
+.getGamesBtn {
+    background: #0a0c42eb;
+    border-color: black;
+    border-radius: 0 4rem 4rem 0;;
+    border-width: 4px;
+    box-shadow: none;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+.teamSearch {
+    border-color: #080841;
+    border-width: 3px;
+    border-radius: 20px;
+}
+
+:host ::ng-deep {
+
+    .sortGames .p-dropdown {
+        border-color: #080841;
+        border-width: 3px;
+        border-radius: 10px;
+    }
+
+    .viewButtons {
+        justify-self: end;
+
+        .p-button {
+            border-color: #080841;
+            box-shadow: none;
+        }
+        .p-button:last-of-type {
+            border-width: 3px 3px 3px 0;
+            border-radius: 0 10px 10px 0;
+        }
+        .p-button:first-of-type {
+            border-width: 3px 0 3px 3px;
+            border-radius: 10px 0px 0px 10px;
+        }
+    }
+    
+    .panelWidth .p-dropdown {
+        width: 14rem;
+    } 
+
+    .getGamesBtn:hover {
+        background: #d5d2ffeb;
+        border-color: black;
+    }
+
+    .panelDropDown {
+        background: #0a0c42eb;
+        color: black;
+        padding: 16px;
+        border-top: 4px solid black;
+        border-bottom: 4px solid black;
+
+        .p-dropdown {
+            background: #525ac3eb;
+            border-radius: 10px;
+            border-color: black;
+            
+            .p-dropdown-label {
+                color: white;
+            }
+        }
+        .p-dropdown:not(.p-disabled):hover{
+            background: #d5d2ffeb;
+            border-color: black;
+        }
+        .p-dropdown:not(.p-disabled).p-focus {
+            border-color: transparent;
+            box-shadow: none;
+        }
+    }
+
+    .dataviewBG {   
+        margin: 2rem 0 9rem 0;
+
+        .p-dataview-header  {
+            border-radius: 12px 12px 0 0;
+            margin: 0px 16rem;
+            background: #ffffffe6;
+            border-width: 3px 3px 0 3px;
+            border-color: black;
+        }
+        
+        .filterPanel {
+            display: grid;
+            grid-template-columns: 25% auto 25%;
+            align-items: center;
+        }
+        
+        .p-paginator-top {
+            border-radius: 0 0 12px 12px;
+            background: #ffffffe6;
+            border: 3px solid black;
+            border-top: 0;
+            margin: 0 16rem;
+        }
+
+        .p-paginator-bottom {
+            margin: 0 7rem;
+            border-radius: 3rem;
+            background: #ffffffe6;
+            border: 2px solid black;
+        }
+
+        .p-paginator {
+            .p-paginator-first, .p-paginator-prev, .p-paginator-page, .p-paginator-next, .p-paginator-last{
+                color: black;
+                background: #2196f3;
+                border-radius: 10px;
+                border: solid;
+            }
+            
+            .p-paginator-page.p-highlight {
+                background: #b0ddff;
+                border: solid;
+                border-radius: 10px;
+                box-shadow: none;
+                color: #000000;
+            }
+            
+            .p-paginator-element:hover {
+                background: #93d0fe;
+                border-radius: 10px;
+            }
+        }
+
+        .p-dataview-content {
+            background: transparent;
+            border: none;
+            margin-top: 3rem;
+
+            .p-nogutter {
+                justify-content: space-evenly;
+                
+                .p-dataview-emptymessage{
+                    display: none;
+                }
+            }
+        }
+    }
+        
+    .prime-slider-override {
+        .p-progress-spinner-svg {
+            position: fixed;
+            width: 20%;
+            margin-top: 1rem;
+        }
+    }    
+    
+}
