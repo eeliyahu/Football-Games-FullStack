@@ -14,56 +14,14 @@ A full-stack web application for displaying football game results, upcoming fixt
 
 ```
 .
-├── .gitignore
-├── customer-app/                    # Angular Frontend
-│   ├── .browserslistrc
-│   ├── .editorconfig
-│   ├── .firebaserc
-│   ├── .gitignore
-│   ├── angular.json
-│   ├── dist/
-│   ├── e2e/
-│   ├── firebase.json
-│   ├── karma.conf.js
-│   ├── node_modules/
-│   ├── package-lock.json
-│   ├── package.json
-│   ├── README.md
-│   ├── src/
-│   │   ├── app/
-│   │   ├── assets/
-│   │   ├── environments/
-│   │   ├── favicon.ico
-│   │   ├── game-card/
-│   │   ├── index.html
-│   │   ├── main.ts
-│   │   ├── polyfills.ts
-│   │   ├── register/
-│   │   ├── styles.scss
-│   │   └── test.ts
-│   ├── tsconfig.app.json
-│   ├── tsconfig.json
-│   └── tsconfig.spec.json
-├── README.md
-└── Server/                          # Node.js Backend
-    ├── .firebase/
-    ├── .firebaserc
-    ├── .gitignore
-    ├── codes.json
-    ├── firebase.json
-    ├── functions/
-    │   ├── .gitignore
-    │   ├── index.js                 # Firebase Functions entry point
-    │   ├── node_modules/
-    │   ├── package-lock.json
-    │   └── package.json
-    ├── node_modules/
-    ├── package-lock.json
-    ├── package.json
-    ├── public/
-    ├── quickstart.js
-    └── server.js                    # Local development server
+├── customer-app/          # Angular Frontend
+└── Server/               # Node.js Backend with Firebase Functions
 ```
+
+The project consists of two main components:
+- **customer-app**: Angular frontend application
+- **Server**: Node.js/Express backend with Firebase Functions support
+
 
 ## 🛠️ Prerequisites
 
