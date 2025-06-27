@@ -16,6 +16,7 @@ The project consists of two main components:
 - **customer-app**: Angular frontend application
 - **Server**: Node.js/Express backend with Firebase Functions support
 
+
 ## 🛠️ Prerequisites
 
 Before you begin, ensure you have the following installed:
