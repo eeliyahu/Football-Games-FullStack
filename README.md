@@ -12,16 +12,9 @@ A full-stack web application for displaying football game results, upcoming fixt
 
 ## 📁 Project Structure
 
-```
-.
-├── customer-app/          # Angular Frontend
-└── Server/               # Node.js Backend with Firebase Functions
-```
-
 The project consists of two main components:
 - **customer-app**: Angular frontend application
 - **Server**: Node.js/Express backend with Firebase Functions support
-
 
 ## 🛠️ Prerequisites
 
